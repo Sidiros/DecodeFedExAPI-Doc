@@ -1,0 +1,51 @@
+{
+  "productName": "FedEx Base64 Decoder",
+  "version": "1.0.0",
+  "identifier": "com.fedex.decoder",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "FedEx Base64 Decoder",
+        "width": 900,
+        "height": 700,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null,
+      "capabilities": [
+        {
+          "identifier": "default",
+          "description": "Default capability for the main window",
+          "windows": ["main"],
+          "permissions": [
+            "core:default",
+            "dialog:default",
+            "fs:default",
+            "fs:allow-write-file",
+            "fs:write-files"
+          ]
+        }
+      ]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [],
+    "resources": [],
+    "externalBin": [],
+    "copyright": "",
+    "category": "Utility",
+    "shortDescription": "Decode base64 strings from FedEx ship API",
+    "longDescription": "A desktop application to decode base64 encoded files from FedEx Ship API and save them with automatic file type detection."
+  }
+}
+
