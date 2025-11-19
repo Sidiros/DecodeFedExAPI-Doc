@@ -45,7 +45,14 @@
     "copyright": "",
     "category": "Utility",
     "shortDescription": "Decode base64 strings from FedEx ship API",
-    "longDescription": "A desktop application to decode base64 encoded files from FedEx Ship API and save them with automatic file type detection."
+    "longDescription": "A desktop application to decode base64 encoded files from FedEx Ship API and save them with automatic file type detection.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
   }
 }
 
